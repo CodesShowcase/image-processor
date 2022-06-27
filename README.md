@@ -16,6 +16,7 @@ The default port is 8080 (e.g. http://localhost:8080)
 Image Processing API =\> Please access the correct endpoint  
 "/api/view" =\> returns all available pictures in the folder  
 "/api/view?file=name" =\> returns single picture (file - name)  
-"/api/resize?file=name&width=pixel&height=pixel" =\> resizes single picture (file - name / width & height in pixel / resulting file - name-resized-width-height.jpg)   
+"/api/resize?file=name&width=pixel&height=pixel" =\> resizes single picture (file - name / width & height in pixel / resulting file - name-resized-width-height.jpg)  
 u"/api/greyscale?file=name" =\> recolors a single picture (file - name / resulting file - name-greyscale.jpg)  
+
 Attention - for all operations please use the filename without the filetype ending and it only works for .jpgs!'  
