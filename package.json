@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run build && npm run jasmine",
-    "start": "node build/src/index.js",
+    "start": "node build/index.js",
     "build": "npx tsc",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/src/index.js\"",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/index.js\"",
     "lint": "eslint . --ext .ts --fix",
     "prettier": "prettier --config .prettierrc src/**/*.ts --write",
     "jasmine": "jasmine"

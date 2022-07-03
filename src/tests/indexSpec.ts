@@ -18,22 +18,22 @@ describe('Route Tests', () => {
   it('Route | Retrieve single image => Should return status 200', async () => {
     const response = await request.get('/api/view?file=fjord');
     expect(response.status).toBe(200);
-  });
+  })
 
   it('Route | Retrieve single nonexistent image => Should return status 400', async () => {
     const response = await request.get('/api/view?file=doesnotexist');
     expect(response.status).toBe(400);
-  });
+  })
 
   it('Route | Resize image => Should return status 200', async () => {
     const response = await request.get('/api/resize?file=fjord&width=400&height=200');
     expect(response.status).toBe(200);
-  });
+  })
 
   it('Route | Greyscale image => Should return status 200', async () => {
     const response = await request.get('/api/greyscale?file=fjord');
     expect(response.status).toBe(200);
-  });
+  })
 
 })
 
